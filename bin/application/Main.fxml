@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="415.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <tabs>
+    <Tab closable="false" text="Adoptions Available">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="459.0">
+               <children>
+                  <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="415.0">
+                     <content>
+                        <BorderPane prefHeight="625.0" prefWidth="400.0">
+                           <top>
+                              <MenuBar BorderPane.alignment="CENTER">
+                                 <menus>
+                                    <Menu mnemonicParsing="false" text="Sort By">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" onAction="#sortName" text="Name" />
+                                          <MenuItem mnemonicParsing="false" onAction="#sortBreed" text="Alphabetical by breed" />
+                                          <MenuItem mnemonicParsing="false" onAction="#sortColor" text="Alphabetical by colour" />
+                                          <MenuItem mnemonicParsing="false" onAction="#sortAge" text="Age" />
+                                          <MenuItem mnemonicParsing="false" onAction="#sortGender" text="Gender" />
+                                       </items>
+                                    </Menu>
+                                    <Menu mnemonicParsing="false" text="Application">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" onAction="#resetAll" text="Reset" />
+                                          <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+                                       </items>
+                                    </Menu>
+                                 </menus>
+                              </MenuBar>
+                           </top>
+                           <center>
+                              <GridPane BorderPane.alignment="CENTER">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="btn1" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn1Pressed" onMouseEntered="#btn1OnHover" onMouseExited="#btn1OffHover" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn2" fitHeight="145.0" fitWidth="197.0" layoutX="19.0" layoutY="23.0" onMouseClicked="#btn2Pressed" onMouseEntered="#btn2OnHover" onMouseExited="#btn2OffHover" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn3" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn3Pressed" onMouseEntered="#btn3OnHover" onMouseExited="#btn3OffHover" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn4" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn4Pressed" onMouseEntered="#btn4OnHover" onMouseExited="#btn4OffHover" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn5" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn5Pressed" onMouseEntered="#btn5OnHover" onMouseExited="#btn5OffHover" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn6" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn6Pressed" onMouseEntered="#btn6OnHover" onMouseExited="#btn6OffHover" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn7" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn7Pressed" onMouseEntered="#btn7OnHover" onMouseExited="#btn7OffHover" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="btn8" fitHeight="145.0" fitWidth="197.0" onMouseClicked="#btn8Pressed" onMouseEntered="#btn8OnHover" onMouseExited="#btn8OffHover" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@assets/dog.JPG" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                           </center>
+                        </BorderPane>
+                     </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab closable="false" text="Adopted Dogs">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="325.0" prefWidth="414.0">
+                    <columns>
+                     	 <TableColumn editable="false" prefWidth="83.0" sortType="DESCENDING" text="Name">
+                     	 	<cellValueFactory> 
+                     	 		<PropertyValueFactory property="name" />
+                    	  	</cellValueFactory>
+                   	   </TableColumn>
+                   	   <TableColumn editable="false" prefWidth="43.5" sortType="DESCENDING" text="Age">
+	             	        <cellValueFactory> 
+	            	         	<PropertyValueFactory property="age" />
+	            	        </cellValueFactory>
+	             	     </TableColumn>
+                       <TableColumn editable="false" prefWidth="98.0" sortType="DESCENDING" text="Sex">
+                       		<cellValueFactory> 
+                     	 		<PropertyValueFactory property="gender" />
+                    	  	</cellValueFactory>
+                   	   </TableColumn>
+                       <TableColumn editable="false" prefWidth="102.0" sortType="DESCENDING" text="Breed">
+                       		<cellValueFactory> 
+                     	 		<PropertyValueFactory property="breed" />
+                    	  	</cellValueFactory>
+                   	   </TableColumn>
+                       <TableColumn editable="false" prefWidth="89.0" sortType="DESCENDING" text="Color">
+                       		<cellValueFactory> 
+                     	 		<PropertyValueFactory property="color" />
+                    	  	</cellValueFactory>
+                   	   </TableColumn>
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
