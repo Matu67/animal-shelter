@@ -1,7 +1,7 @@
 # animal-shelter
 > A nice-looking JavaFX application.
 
-Adopt a dog!
+Adopt a dog from a catalogue of randomly selected and named pooches!
 
 <img src="https://github.com/Matu67/amazing-arrays/blob/master/header.png" width="600" height="400" />
 
