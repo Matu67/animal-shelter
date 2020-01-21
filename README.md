@@ -3,7 +3,10 @@
 
 Adopt a dog from a catalogue of randomly selected and named pooches!
 
-<img src="https://github.com/Matu67/amazing-arrays/blob/master/header.png" width="600" height="400" />
+<img src="https://github.com/Matu67/animal-shelter/blob/master/Screenshot1.png"/>
+<img src="https://github.com/Matu67/animal-shelter/blob/master/Screenshot2.png"/>
+<img src="https://github.com/Matu67/animal-shelter/blob/master/Screenshot3.png"/>
+<img src="https://github.com/Matu67/animal-shelter/blob/master/Screenshot4.png"/>
 
 ## Meta
 
